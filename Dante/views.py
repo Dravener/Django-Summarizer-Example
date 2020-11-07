@@ -1,17 +1,12 @@
 from django.shortcuts import render
 from selenium import webdriver
-from selenium.common.exceptions import ElementNotVisibleException, ElementNotSelectableException
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as ec
-from selenium.webdriver.firefox.options import Options as FireFoxOptions
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 import time
 from gensim.summarization import  summarize
-import re
-import requests
-from bs4 import BeautifulSoup
 
 
 def home(request):
